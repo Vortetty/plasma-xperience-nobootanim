@@ -7,6 +7,7 @@ Since this is a Sound Theme made from scratch, **Plasma Experience** replaces an
 * Simple system sounds (this includes: lock, unlock, dock sounds, NFC audio cues, camera sounds, and tapping sfx);  
 * Ringtones;  
 * Notifications;  
+
 If you want more sounds, feel free to push an issue on this repo  
 
 # Differences from the source
