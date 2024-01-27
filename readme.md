@@ -36,8 +36,6 @@ Due to a slight hierarchy change inside the `/system` folder (specifically to th
 * Wait for installation;  
 * Reboot your device and enjoy!
 
-In any case the installation won't end well (ex. Magisk would complain about the zipfile being invalid), extract all of the contents of the downloaded file, move the module files out of it's subfolder (*if* they are into one, else don't do anything), and repack them as a zipfile all over again by using your preferred file manager. Once repacked, repeat the steps above.  
-
 ### Terminal
 **Disclaimer:**  
 if you prefer doing the entire process in a terminal via your android device, you must need apps like [Terminal Emulator](https://f-droid.org/en/packages/jackpal.androidterm/) or [Termux](https://f-droid.org/en/packages/com.termux/) installed firsthand  
@@ -49,10 +47,10 @@ cd /sdcard/
 ls /system/bin | grep -e curl -e wget
 
 ##  If the results pull out only wget, write this on your terminal
-wget -O plasma-xperience_Magisk.zip https://codeberg.org/Baempaieo/plasma-xperience/archive/master.zip
+wget https://codeberg.org/Baempaieo/plasma-xperience/releases/download/1.0/plasma-xperience_Magisk.zip
 
 ##  Else, if the output results into curl: type this command instead
-curl --output plasma-xperience_Magisk.zip https://codeberg.org/Baempaieo/plasma-xperience/archive/master.zip
+curl https://codeberg.org/Baempaieo/plasma-xperience/releases/download/1.0/plasma-xperience_Magisk.zip
 
 magisk --install-module /sdcard/plasma-xperience_Magisk.zip
 ```
