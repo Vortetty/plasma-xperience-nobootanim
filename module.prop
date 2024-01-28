@@ -4,3 +4,4 @@ version=v1
 versionCode=1
 author=Baempaieo
 description=Systemlessly applies to your device an handcrafted SoundPack made out of KDE Plasma (Mobile & Desktop) sounds!
+updateJson=https://codeberg.org/Baempaieo/plasma-xperience/raw/branch/master/update.json
