@@ -1,19 +1,22 @@
 # Plasma Experience
-An handcrafted Sound Theme made out of KDE Plasma Mobile and Desktop's sounds!  
-This Magisk module should give you a more unique flair to your own rooted device, basically  
+A simple Magisk module that gives that KDE touch theming to your Android device:  
+all done from scratch, by using assets from Plasma Mobile and Desktop!  
 
-# Which sounds does it add?
-Since this is a Sound Theme made from scratch, **Plasma Experience** replaces and adds the following sounds to your Android system:  
-* Simple system sounds (this includes: lock, unlock, dock sounds, NFC audio cues, camera sounds, and tapping sfx);  
+# Which stuff does it add?
+Since this is a theming module made from scratch, **Plasma Experience** replaces and adds the following to your Android system:  
+* System sounds (this includes: lock, unlock, dock, NFC audio cues, camera, and tapping sounds);  
 * Ringtones;  
 * Notifications;  
+* System fonts (replaces `Roboto` fonts to KDE's `Oxygen`);  
+* Boot animation (manually ported by using `breeze-plymouth`'s assets);  
 
-If you want more sounds, feel free to push an issue on this repo  
+If you want more features, feel free to push an issue on this repo  
 
 # Differences from the source
-Despite the Plasma Mobile sounds are untouched, i have done few modifications on the UI sound folder:  
-* Made the lock, unlock (this extends to dock sounds), and camera focus sound more audible by amping up the dB frequency (this up to 10dB, in an attempt to be audible without maxing the system volume);  
-* Converted the `camera_shutter.wav` file to an `ogg` file, so that Android would read it without issues;  
+Despite the Plasma Mobile sounds are untouched (by majority), i have done few tweaks here and there to several things:  
+* Made the lock, unlock (this extends to dock sounds), and camera focus sounds more audible by amping up the dB frequency (around 10dB, using `ffmpeg`);  
+* Converted the `camera_shutter.wav` soundfile to `.ogg`, so that the Android filesystem would recognize it;  
+* Renamed a couple of ringtones (like `Morning Rush` and `On The Way`) by including `_` between the spaces, else Android would ignore them during ringtone selection;  
 
 # Pre-requirements
 * A ROM that is based on Android 6.0 (and beyond)  
@@ -47,12 +50,12 @@ cd /sdcard/
 ls /system/bin | grep -e curl -e wget
 
 ##  If the results pull out only wget, write this on your terminal
-wget https://codeberg.org/Baempaieo/plasma-xperience/releases/download/1.0/plasma-xperience_Magisk.zip
+wget https://codeberg.org/Baempaieo/plasma-xperience/releases/download/2.0/plasma-xperience_Magisk2.0.zip
 
 ##  Else, if the output results into curl: type this command instead
-curl https://codeberg.org/Baempaieo/plasma-xperience/releases/download/1.0/plasma-xperience_Magisk.zip
+curl https://codeberg.org/Baempaieo/plasma-xperience/releases/download/2.0/plasma-xperience_Magisk2.0.zip
 
-magisk --install-module /sdcard/plasma-xperience_Magisk.zip
+magisk --install-module /sdcard/plasma-xperience_Magisk2.0.zip
 ```
 
 ## Other module managers
@@ -60,9 +63,14 @@ If you may have apps like [Androidacy Module Manager](https://github.com/Android
 
 # Tested devices
 * Samsung Galaxy Tab S6 Lite (running LineageOS 21, unofficial build, based on Android 14)  
+* Samsung Galaxy S4 Mini LTE (running LineageOS 14, official build, based on Android 7)  
 
 # Credits & Sources
 * [Plasma Mobile Sounds](https://github.com/KDE/plasma-mobile-sounds), used for porting over to Android notification sounds and ringtones;
-* [Plasma Oxygen Sound Theme](https://github.com/KDE/oxygen-sounds), used for most of the UI sounds;  
-* [Plasma Ocean Sound Theme](https://github.com/KDE/ocean-sound-theme), used for a couple of UI sounds;  
+* [Plasma Oxygen Sound Theme](https://github.com/KDE/oxygen-sounds), used for most of the UI sounds + alarm;  
+* [Plasma Ocean Sound Theme](https://github.com/KDE/ocean-sound-theme), used for a couple of UI sounds + alarm;  
 * [Freedesktop](https://www.freedesktop.org/wiki/), used the `bell.oga` soundfile as the `Effect_Tick` sound within the module;  
+* [Oxygen Fonts](https://github.com/vernnobile/oxygenFont), used for replacing the system fonts;  
+* [Breeze Plymouth](https://github.com/KDE/breeze-plymouth), used some of it's assets to create the custom boot animation;  
+* [create_android_bootanimation](https://github.com/iamantony/create_android_bootanimation), tool used for creating the custom `bootanimation.zip` file for the module;  
+    * Also, manually edited the `desc.txt` file to adjust the animation (with the tweaks, it should loop and run at `24fps` for a slow-paced animation);  

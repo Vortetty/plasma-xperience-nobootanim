@@ -1,7 +1,7 @@
 id=plasma-xperience
 name=Plasma Experience
-version=v1
-versionCode=1
+version=v2
+versionCode=2
 author=Baempaieo
-description=Systemlessly applies to your device an handcrafted SoundPack made out of KDE Plasma (Mobile & Desktop) sounds!
+description=Add some KDE touch to your Android ROM with this hand-crafted theme made purely with Plasma Mobile and Desktop assets!
 updateJson=https://codeberg.org/Baempaieo/plasma-xperience/raw/branch/master/update.json
