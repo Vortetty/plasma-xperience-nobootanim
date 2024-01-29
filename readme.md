@@ -67,8 +67,8 @@ If you may have apps like [Androidacy Module Manager](https://github.com/Android
 
 # Credits & Sources
 * [Plasma Mobile Sounds](https://github.com/KDE/plasma-mobile-sounds), used for porting over to Android notification sounds and ringtones;
-* [Plasma Oxygen Sound Theme](https://github.com/KDE/oxygen-sounds), used for most of the UI sounds + alarm;  
-* [Plasma Ocean Sound Theme](https://github.com/KDE/ocean-sound-theme), used for a couple of UI sounds + alarm;  
+* [Plasma Oxygen Sound Theme](https://github.com/KDE/oxygen-sounds), used for most of the UI sounds;  
+* [Plasma Ocean Sound Theme](https://github.com/KDE/ocean-sound-theme), used for a couple of UI sounds;  
 * [Freedesktop](https://www.freedesktop.org/wiki/), used the `bell.oga` soundfile as the `Effect_Tick` sound within the module;  
 * [Oxygen Fonts](https://github.com/vernnobile/oxygenFont), used for replacing the system fonts;  
 * [Breeze Plymouth](https://github.com/KDE/breeze-plymouth), used some of it's assets to create the custom boot animation;  
