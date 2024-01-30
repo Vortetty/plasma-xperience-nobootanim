@@ -16,3 +16,7 @@
 * Added custom boot animation (done by using `breeze-plymouth`'s assets);  
 * Added custom fonts (replaces `Roboto`'s default fonts to `Oxygen`);  
 * Updated some files for the new version (obviously lol);  
+
+### KWrench Fix - 2.1
+* Added the `support` string to `module.prop`;  
+* Fixed a typo left on `update.json` (left `v1` instead of updating it to `v2`);  

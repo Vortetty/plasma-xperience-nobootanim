@@ -1,6 +1,6 @@
 {
-		"version": "v1",
-		"versionCode": 1,
-		"zipUrl": "https://codeberg.org/Baempaieo/plasma-xperience/releases/download/2.0/plasma-xperience_Magisk2.0.zip",
+		"version": "v2.1",
+		"versionCode": 21,
+		"zipUrl": "https://codeberg.org/Baempaieo/plasma-xperience/releases/download/2.1/plasma-xperience_Magisk2.1.zip",
 		"changelog": "https://codeberg.org/Baempaieo/plasma-xperience/raw/branch/master/changelog.md"
 }
