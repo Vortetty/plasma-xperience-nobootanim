@@ -11,11 +11,15 @@
 * Added the `updateJson` string to `module.prop`, so the module will know for updates;
 * Fixed the `update.json` file, so it will point to a raw version of the changelogs;  
 
+---
+
 ### Kool Dragons - 2.0
 #### 30-01-2024
 * Added custom boot animation (done by using `breeze-plymouth`'s assets);  
 * Added custom fonts (replaces `Roboto`'s default fonts to `Oxygen`);  
 * Updated some files for the new version (obviously lol);  
+
+---
 
 ### KWrench Fix - 2.1
 #### 30-01-2024
