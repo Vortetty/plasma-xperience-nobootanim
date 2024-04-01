@@ -29,8 +29,7 @@ Despite the Plasma Mobile sounds are untouched (by majority), i have done few tw
 Due to a slight hierarchy change inside the `/system` folder (specifically to things like system audio and boot animation) since A10, the module may have some duplicate files in order to have compatibility both for older (from 6~9) and newer (from 10~14) Android ROMs  
 
 # Installation
-## Magisk App
-### GUI
+## GUI
 * Download the zipfile by going on this repo's `Releases` tab;  
 * Open the Magisk app;  
 * Go to the `Modules` tab;  
@@ -39,7 +38,7 @@ Due to a slight hierarchy change inside the `/system` folder (specifically to th
 * Wait for installation;  
 * Reboot your device and enjoy!
 
-### Terminal
+## Terminal
 **Disclaimer:**  
 if you prefer doing the entire process in a terminal via your android device, you must need apps like [Terminal Emulator](https://f-droid.org/en/packages/jackpal.androidterm/) or [Termux](https://f-droid.org/en/packages/com.termux/) installed firsthand  
 ```
@@ -57,9 +56,6 @@ curl https://codeberg.org/Baempaieo/plasma-xperience/releases/download/2.0/plasm
 
 magisk --install-module /sdcard/plasma-xperience_Magisk2.0.zip
 ```
-
-## Other module managers
-If you may have apps like [Androidacy Module Manager](https://github.com/Androidacy/MagiskModuleManager) (or, if you have an older version, **Fox's Magisk Module Manager**), the installation should be more straightforward than Magisk's  
 
 # Tested devices
 * Samsung Galaxy Tab S6 Lite (running LineageOS 21, unofficial build, based on Android 14)  
